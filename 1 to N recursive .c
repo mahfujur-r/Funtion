@@ -1,16 +1,18 @@
-#include<stdio.h>
-void printnto1(int n){
-    if(n==0){
-         return;
-    }
-    printf("%d",n);
-    printnto1(n-1);
-}
+#include <stdio.h>
 int main(){
-    int n ;
-    printf("enter num: ");
+    int n;
+    printf(" enter :");
     scanf("%d",&n);
-    printnto1(n);
+    display(n);
     return 0;
+}
+void display(n){
+    if(n==0)
+        return;
+     display(n-1);
+   
+    printf("%d\n",n);
+   
+
 
 }
