@@ -12,6 +12,6 @@ int main() {
     int n ;
     scanf("%d",&n);
     int res = fact(n);
-    printf("%d\n", n, res);
+    printf("%d! = %d\n", n, res);
     return 0;
 }
